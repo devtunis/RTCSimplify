@@ -13,7 +13,7 @@ const CardTutorials = ({videoImage,description,infoSteps,linkvideo,shortExplanti
                  <video controls   muted preload="metadata" width="100%" height={"100%"}>
                   <source  src={linkvideo} type="video/mp4" />
                 </video> :   <> <img src={videoImage} alt='webrtc' loading='lazy'/>
-                <img src='../public/tutorials/icon/play.png'
+                <img src='/tutorials/icon/play.png'
                 onClick={()=>SetShowContent(true)}
                 alt='play' loading='lazy'/></>
                 
@@ -30,7 +30,7 @@ const CardTutorials = ({videoImage,description,infoSteps,linkvideo,shortExplanti
                 
                 {infoSteps.map((item)=> <>
                   <div className="inforamtion">
-                    <img src="../public/tutorials/icon/point.png"/>
+                    <img src="/tutorials/icon/point.png"/>
                     <h5>{item}</h5>
                 </div>
                 </>)}
